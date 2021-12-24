@@ -1,6 +1,6 @@
 <?php
     //Primer bloque de variables y valores
-    $destino = 'keto@keto.com.ar';  //a donde va a llegar.
+    $destino = 'pizarroronald06@gmail.com';  //a donde va a llegar.
     $origen_nombre = ''; //dominio que envia el mail.
     $origen_mail=''; //lo manda el mismo mail al que llega, independientemente de la info del usuario.
     $subject='Consultas en keto.com.ar'; // Asunto de todos los mensajes que llegan desde el form.
