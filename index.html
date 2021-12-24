@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Icono de la pagina -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono-logo.png"> <!-- tamaño 64x64 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- css fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <!-- Aos CSS para animaciones de texto o cajas-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Keto</title>
+</head>
+
+<body>
+
+    <!-- Nav y Banner -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-lg-0">
+        <div class="container-md">
+            <a class="navbar-brand p-0" href="index.html">
+                <img src="imagenes/logoketo-02.svg" alt="logo_keto" width="65" height="65">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-success me-4" href="#home">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#nosotros">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#recetas">RECETAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="#galeria">GALERIA</a>
+                    </li>
+                    <li class="nav-item me-3  pb-2 pb-lg-0">
+                        <button type="button" class="btn btn-success ms-auto">
+                            <a href="#contacto" class="text-white text-decoration-none">CONTACTO</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <section class="banner" id="home">
+            <div class="banner_uno">
+                <div class="container-fluid mt-5">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-8 my-5 pb-5 text-white">
+                            <h1 class="fw-bold">Bienvenido!</h1>
+                            <h2>Encuentra tu menú favorito</h2>
+                            <p class="fs-5 lh-1 fw-normal pb-5">Si todavía no conoces sus beneficios, prueba nuestro delicioso y saludable menú creado por dietistas y cocinados por chefs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner_dos">
+                <div class="container-fluid p-0">
+                    <div id="bannerprincipal" class="carousel slide carousel-fade d-none d-md-block"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#bannerprincipal" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#bannerprincipal" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#bannerprincipal" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/banner1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-start mt-lg-5 pt-5">
+                                    <h1 class="mt-0">Bienvenido!</h1>
+                                    <h2 class="mt-0">Encuentra tu menú favorito.</h2>
+                                    <p class="mt-0">Si todavía no conoces sus beneficios, prueba nuestro delicioso y saludable menú creado por dietistas y cocinados por chefs.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/banner3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-start mt-lg-5 pt-5">
+                                    <h1 class="mt-0">Bienvenido!</h1>
+                                    <h2>Encuentra tu menú favorito.</h2>
+                                    <p class="mt-0">Si todavía no conoces sus beneficios, prueba nuestro delicioso y
+                                        saludable menú creado por dietistas y cocinados por chefs.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/banner2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block text-start mt-lg-5 pt-5">
+                                    <h1 class="mt-0">Bienvenido!</h1>
+                                    <h2 class="mt-0">Encuentra tu menú favorito.</h2>
+                                    <p class="mt-0">Si todavía no conoces sus beneficios, prueba nuestro delicioso y
+                                        saludable menú creado por dietistas y cocinados por chefs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bannerprincipal"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bannerprincipal"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Sección Sobre nosotros -->
+        <section id="nosotros">
+            <div class="container py-5">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-12 col-lg-7 ps-lg-5 my-auto texto_nosotros px-3">
+                        <h1 data-aos="fade-right" data-aos-duration="1000" class="ms-lg-5">
+                            SOBRE NOSOTROS
+                        </h1>
+                        <p data-aos="fade-right" data-aos-duration="1000" class="ms-lg-5">
+                            Preparamos todos nuestros platos, con ayuda de nuestro equipo de nutricionistas/dietistas
+                            y chefs de alta cocina, con una dilatada experiencia en el mundo de la gastronomía.
+                            Gracias a toda su experiencia y pasión por la cocina, la elaboración de nuestros platos es
+                            de altísima calidad. por eso podemos decir que, entregamos menús gourmet a domicilio.
+                        </p>
+                        <a href="https://wa.me/1123456789" target="_blank"><button data-aos="fade-right" data-aos-duration="1000" type="button" class="btn btn-success ms-lg-5 mb-5 mb-lg-2">ESPERAMOS TU CONSULTA</button></a>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-start">
+                        <img src="imagenes/nosotros.jpg" alt="Imagen de nosotros" width="300" height="281">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Recetas -->
+        <section id="recetas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 data-aos="fade-down" data-aos-duration="1000" class="text-center pt-5 mt-5 pb-4 text-white">RECETAS</h1>
+                    </div>
+                    <div class="row pb-5 mx-0">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end mb-5">
+                            <div data-aos="flip-left" class="card card-1">
+                                <img src="imagenes/receta1.jpg" class="card-img-top" alt="Queto feta y aceitunas">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Plato keto de salmón ahumado</h5>
+                                    <p class="card-text">Comida real en un plato. Salmón, espinacas, mayonesa y lima.
+                                        Porque una cena keto no tiene que ser complicada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+                            <div data-aos="flip-left" data-aos-duration="1000" class="card card-2 mb-5">
+                                <img src="imagenes/receta2.jpg" class="card-img-top" width="20"
+                                    alt="Queto feta y aceitunas">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pollo al horno con pesto, queto feta y aceitunas
+                                    </h5>
+                                    <p class="card-text">Las superestrellas mediterráneas queso feta, aceitunas y pesto
+                                        se unen en este cremoso plato de pollo keto. Dale una oportunidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6  d-flex justify-content-center justify-content-lg-end">
+                            <div data-aos="flip-left" data-aos-duration="1000" class="card card-3 mb-5 mb-lg-0">
+                                <img src="imagenes/receta3.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cazuela keto de curry</h5>
+                                    <p class="card-text">¿Necesitas algo para entrar en calor? ¡Esta sabrosa pero
+                                        sencilla cazuela de curry con pollo, coliglor y coco te ayudará! Es una comida
+                                        keto.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+                            <div data-aos="flip-left" data-aos-duration="1000" class="card card-4 ">
+                                <img src="imagenes/receta4.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pollo y champiñones a la sartén</h5>
+                                    <p class="card-text">Aquí la preparamos en una sola sartén junto con una cremosa
+                                        salsa con queso y fetas. Es una comida keto rápida ideal para las noches más
+                                        ajetreadas porque se prepara en menos de 30 minutos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección sobre Receta destacada (Video) -->
+        <section class="video">
+            <div class="container py-5 px-4">
+                <div class="row text-white">
+                    <div class="col-12 text-center">
+                        <i class="bi bi-youtube fs-1"></i>
+                        <h1 class="fw-light fw-bolder">Video de receta destacada</h1>
+                    </div>
+                    <div class="col-12 col-lg-5 mx-auto">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/37iPI3XTWWg" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 mx-auto text-center pt-3">
+                        <h2 class="fw-normal lh-1 fs-3 display-2">Pollo a la mantequilla con especias de la india
+                        </h2>
+                        <p class="mt-3 fw-light text-start text-md-center">
+                            Apto para ceto y muy fácil. Esta receta de pollo con crack en olla de
+                            cocción lenta de Hidden Valley Ranch mezcla los sabores para una adición fresca a sus
+                            reservas de la noche de la semana.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galeria -->
+        <section id="galeria">
+            <div class="container py-5">
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-12">
+                        <h1 data-aos="fade-down" data-aos-duration="1000" class="text-center pb-4">GALERIA</h1>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center mb-md-3">
+                        <a data-fancybox="imagenes" href="imagenes/galeria2.jpg">
+                        <img src="imagenes/galeria2.jpg" width="900" height="811" alt="imagen1" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center mb-md-3">
+                        <a data-fancybox="imagenes" href="imagenes/galeria1.jpg">
+                        <img  src="imagenes/galeria1.jpg" width="900" height="811" alt="imagen2" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center mb-md-3">
+                        <a data-fancybox="imagenes" href="imagenes/galeria3.jpg">
+                        <img  src="imagenes/galeria3.jpg" width="900" height="811" alt="imagen3" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center mb-md-3">
+                        <a data-fancybox="imagenes" href="imagenes/galeria4.jpg">
+                        <img  src="imagenes/galeria4.jpg" width="900" height="811" alt="imagen4.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center">
+                        <a data-fancybox="imagenes" href="imagenes/galeria5.jpg">
+                            <img  src="imagenes/galeria5.jpg" width="900" height="811" alt="imagen5" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center">
+                        <a data-fancybox="imagenes" href="imagenes/galeria6.jpg"> <img  src="imagenes/galeria6.jpg" width="900" height="811" alt="imagen6" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+
+        <section id="contacto">
+            <div class="container py-5 ">
+                <div class="row text-white">
+                    <div class="col-sm-12 text-center mt-5">
+                        <h1 data-aos="fade-down" data-aos-duration="1000">CONTACTO</h1>
+                        <a href="https://wa.me/1123456789" target="_blank"
+                            class="text-decoration-none text-white fs-5 num_mail me-3">+54123456789</a>
+                        <a href="mailto:keto@keto.com.ar" target="_blank"
+                            class="text-decoration-none text-white fs-5 num_mail ms-3">keto@keto.com.ar</a>
+                        <p class="lh-1 mt-3">
+                            CONTENIDO EXCLUSIVO Y OFERTAS DIRECTAMENTE A SU BANDEJA DE ENTRADA
+                        </p>
+                    </div>
+                    <form action="consulta.php" method="post" enctype="application/x-www-form-urlencoded" class="row needs-validation" novalidate>
+                        <div class="col-10 col-md-7 mx-auto my-2">
+                            <label for="nombres" class="form-label">Nombre<span>*</span>:</label>
+                            <input type="text" class="form-control" id="nombres" placeholder="Ingrese su nombre"
+                                required>
+                            <div class="valid-feedback text-white fw-bold">
+                                Se introdujo su nombre correctamente.
+                            </div>
+                            <div class="invalid-feedback text-dark fw-bold">
+                                NO TE OLVIDES DEL NOMBRE.
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-7 mx-auto my-2">
+                            <label for="apellidos" class="form-label">Apellido<span>*</span>:</label>
+                            <input type="text" class="form-control" id="apellidos" placeholder="Ingrese su apellido"
+                                required>
+                            <div class="valid-feedback text-white fw-bold">
+                                Se introdujo su apellido correctamente.
+                            </div>
+                            <div class="invalid-feedback text-dark fw-bold">
+                                NO TE OLVIDES DEL APELLIDO.
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-7 mx-auto my-2">
+                            <label for="mail" class="form-label">E-mail<span>*</span>:</label>
+                            <input type="text" class="form-control" id="mail" placeholder="Ingrese su correo" required>
+                            <div class="valid-feedback text-white fw-bold">
+                                Se introdujo su e-mail correctamente.
+                            </div>
+                            <div class="invalid-feedback text-dark fw-bold">
+                                NO TE OLVIDES DEL E-MAIL.
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-7 mx-auto my-2">
+                            <label for="consultas" class="form-label">Consulta<span>*</span>:</label>
+                            <textarea class="form-control" rows="3" placeholder="Deje su consulta..."
+                                aria-describedby="maximos-caracteres" maxlength="480"></textarea>
+                            <div id="maximos-caracteres" class="form-text text-white fw-bold">Máxima cantidad de
+                                caractéres 480
+                            </div>
+                            <button type="submit" class="btn btn-light text-success mt-4 border-0 fw-bold flex-grow-1">Enviar consulta</button>
+                            <button type="reset" class="btn btn-light text-success mt-4 border-0 fw-bold ms-lg-2">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Footer -->
+    <footer>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12 col-md-4 mt-5 text-center mb-3 mb-md-0">
+                    <a href="index.html"><img src="imagenes/logoketo-02.svg" alt="logo_keto" width="75" height="75"></a>
+                </div>
+            </div>
+
+            <div class="row text-center fw-bold">
+                <div class="col-12 col-md-4 text-white text-center mt-md-5">
+                    <p class="mt-md-4">Año 2021</p>
+                    <p>Diseño Multimedial 2 "A" T.T</p>
+                </div>
+                <div class="col-12 col-md-4 text-white text-center mt-3">
+                    <p>Profesor: Jorge Samuelle</p>
+                    <p>Ronald Santamaría Pizarro</p>
+                    <p class="mb-5 pb-5 mb-md-0 pb-md-0">Alejandro Ruiz Diaz</p>
+                </div>
+
+                <div class="col-sm-12 col-md-4 text-white text-center d-flex justify-content-around d-md-block redes_sociales">
+                    <a href="http://www.facebook.com/">
+                        <i class="bi bi-facebook text-white text-decoration-none d-md-block mt-md-4 mt-lg-3"></i>
+                    </a>
+                    <a href="http://www.youtube.com/">
+                        <i class="bi bi-youtube text-white text-decoration-none d-md-block mt-md-4 mt-lg-3"></i>
+                    </a>
+                    <a href="http://www.instagram.com/">
+                        <i class="bi bi-instagram text-white text-decoration-none d-md-block mt-md-3 mt-lg-3"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- CDN de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery de fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- CDN (Content Delivery Network) Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Validación de formulario -->
+    <script src="js/validacion.js"></script>
+    <!-- Aos para animaciones de texto o cajas-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

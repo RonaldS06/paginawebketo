@@ -1,0 +1,261 @@
+
+html{
+    scroll-padding-top: 3.75rem;
+}
+/* Seccion Css de NAV*/
+.navbar{
+    z-index: 100!important;
+}
+
+nav{
+    font-family: 'Oswald', sans-serif;
+}
+
+nav a{
+    transition: all .5s !important;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.10rem;
+}
+
+nav a:hover{
+    transform: scale(1.1,1.1);
+    color: #609e50 !important;
+}
+
+button a:hover{
+    color: white!important;
+}
+
+li.nav-item.me-3 {
+    display: inline-block;
+    text-align: center;
+}
+nav ul li button.btn {
+    font-size: 1.10rem;
+}
+
+/* Banner */
+header{
+    background: url(../imagenes/banner-sm.jpg);
+    background-color: rgb(50,50,50);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+}
+
+section.banner {
+    margin-top: 4.0625rem;
+}
+.banner h1{
+    font-size: 3.125rem;
+    font-size: 'Poppins';
+    margin-top: 7rem;
+}
+
+
+/* Inicio Sobre Nosotros */
+#nosotros{
+    background: url(../imagenes/fondo_nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+}
+#nosotros h1, #recetas h1, #galeria h1, #contacto h1{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-size: 2.675rem !important;
+    font-weight: bold;
+}
+
+#nosotros h1::after{
+    position: absolute;
+    content: 'SOBRE NOSOTROS';
+    font-size: 3.375rem;
+    left: 0rem;
+    letter-spacing: -0.3125rem;
+    top: -1rem;
+    opacity: 0.15;
+}
+
+
+
+/* Inicio Sobre Recetas */
+#recetas{
+    background: url(../imagenes/fondo_negro.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#recetas h1::after {
+	content: 'RECETAS';
+	display: block;
+	font-size: 3.375rem;
+	letter-spacing: -0.125rem;
+	opacity: 0.15;
+	margin-left: 0rem;
+	top: 0.625rem;
+	margin-top: -4.375rem;
+}
+
+
+.card{
+    color: white;
+    border: 0;
+    transition: all .5s;
+}
+.card:hover{
+    transform: scale(1.07,1.07);
+}
+
+[class^=card-]{
+    cursor: pointer;
+}
+
+.card-1{
+    background-color: #EF233C;
+}
+.card-2{
+    background-color: #609E50;
+}
+.card-3{
+    background-color: #398E69;
+
+}
+.card-4{
+    background-color: #E99619;
+}
+
+/* INICIO VIDEO */
+.video{
+    background: url(../imagenes/fondo_verde.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+.video p{
+    line-height: 1.1875rem;
+}
+
+/* INICIO GALERIA */
+#galeria h1::after {
+	content: 'GALERIA';
+	display: block;
+	font-size: 3.375rem;
+	letter-spacing: -0.125rem;
+	opacity: 0.15;
+	margin-left: 0;
+	top: 0.625rem;
+	margin-top: -4.375rem;
+}
+
+#galeria [alt*=imagen]{
+    filter:saturate(100%);
+    transition: all .5s;
+}
+
+#galeria [alt*=imagen]:hover{
+    transform: scale(1.035, 1.035);
+    filter:saturate(10%);
+}
+
+
+
+/* Inicio Contacto */
+#contacto{
+    background: url(../imagenes/fondo_verde.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contacto h1::after {
+	content: 'CONTACTO';
+	display: block;
+	font-size: 3.375rem;
+	letter-spacing: -0.125rem;
+	opacity: 0.25;
+	margin-left: 0rem;
+	top: 0.625rem;
+	margin-top: -4.375rem;
+}
+
+#contacto [type=submit]:hover,
+[type=reset]:hover{
+    background-color: #609E50;
+    color: white!important;
+    font-weight: bold;
+    border: 0;
+}
+#contacto span{
+    color: red;
+}
+
+#contacto .num_mail{
+    transition: all .3s;
+}
+#contacto .num_mail:hover{
+    font-weight: bold;
+}
+
+/* footer */
+
+footer{
+    background: url(../imagenes/fondo_negro.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer .redes_sociales{
+    margin-top: -3.125rem;
+}
+
+
+footer [class*="bi-"]{
+    font-size: 2.1875rem!important;
+    transition: all .5s;
+}
+
+footer [class*="bi-"]:hover{
+    color: #609E50!important;
+}
+
+
+
+@media (min-width: 576px) {
+    .banner h1{
+        font-size: 4.125rem;
+    }
+    .card{
+        width: 60%;
+    }
+    
+}
+@media (min-width: 768px) {
+    .banner_uno{
+        display: none;
+    }
+    .carousel-caption{
+        top: 0.625rem;
+        width: 31rem;
+    }
+
+}
+@media (min-width: 992px) {
+    .carousel-caption {
+        top: 3.625rem;
+    }
+    .carousel-caption {
+        top: 0.5625rem;
+        width: 31rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .banner h1{
+        font-size: 5.125rem;
+    }
+}
