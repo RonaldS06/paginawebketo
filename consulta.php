@@ -11,7 +11,7 @@
     $headers = "from: $origen_nombre <$origen_mail>\r\n"; 
     $headers .= "Reply-To: $origen_mail\r\n";
     $headers .= "Return-Path: $origen_nombre <$origen_mail>\r\n";
-    
+    #hola mundo
     $mensaje=''; //Con este bloque llega el mensaje del usuario.
 
         foreach($_POST as $k => $v){
